@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link type="text/css" href="style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" 
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <fieldset>
+        <legend>Login</legend>
+        <form id="form" onsubmit="return validateForm();" action="main.html">
+            <i class="fa-solid fa-user" id="logo"></i>
+            <div>
+                <i class="fa-solid fa-user"></i>
+                <label for="username">ชื่อผู้ใช้ ::</label>
+                <input class="input" id="username" name="username" type="text" placeholder="ใส่ชื่อผู้ใช้" required>
+                <br><br>
+                <i class="fa-solid fa-key"></i>
+                <label for="password">รหัสผ่าน ::</label>
+                <input class="input" id="password" name="password" type="password" placeholder="ใส่รหัสผ่าน" required>
+                <i class="fa-solid fa-eye-slash" id="visibility" onclick="changeIcon(this);showpassword()"></i>                
+            </div>
+            <div class="button">
+                <input class="btn" id="submit" type="submit" value="เข้าสู่ระบบ">
+                <input class="btn" id="clear" type="reset" value="ล้าง">
+            </div>
+            <label id="account">หรือเข้าสู่ระบบด้วย</label><br>
+            <div class="icons">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-google"></i></a>
+                <a href="#"><i class="fa-brands fa-skype"></i></a>
+            </div>
+            <br>
+            <div class="register">
+                <label type="text">หากคุณยังไม่ได้สมัครสมาชิก</label>
+                <a id="register" href="register.html">สมัครสมาชิก</a>
+            </div>
+        </form>
+    </fieldset>
+    <script src="index.js"></script>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+
+</body>
+
+</html>

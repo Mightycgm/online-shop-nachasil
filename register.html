@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <script src="index.js"></script>
+</head>
+<body>
+    <fieldset>
+        <legend>Register</legend>
+        <form>
+            <i class="fa-solid fa-user" id="logo"></i>
+            <div>
+                <i class="fa-solid fa-user"></i>
+                <label type="text">ชื่อผู้ใช้ :: </label>
+                <input type="text" class="input" name="username" id="username" placeholder="ชื่อผู้ใช้" required>
+                <br>
+                <i class="fa-solid fa-envelope"></i>
+                <label type="text">อีเมล :: </label>
+                <input type="email" class="input" name="email" id="email" placeholder="อีเมล" required>
+                <br>
+                <i class="fa-solid fa-key"></i>
+                <label type="text">รหัสผ่าน :: </label>
+                <input type="password" class="input" name="password" id="password" placeholder="รหัสผ่าน" required>
+                <br>
+                <i class="fa-solid fa-check-double"></i>
+                <label type="text">ยืนยันรหัสผ่าน :: </label>
+                <input type="password" class="input" name="confirm_password" id="confirm_password"
+                    placeholder="ยืนยันรหัสผ่าน">
+                <i class="fa-solid fa-eye-slash" id="visibility" onclick="changeIcon(this);showpassword()"></i>
+                <br>
+            </div>
+            <div class="button">
+                <input type="submit" class="btn" id="submit" value="สมัครสมาชิก">
+                <input type="reset" class="btn" id="clear" value="ล้าง">
+            </div>
+            <div id="login">
+                <label>หรือเป็นสมาชิกอยู่แล้ว</label>
+                <a href="login.html">เข้าสู่ระบบ</a>
+            </div>
+        </form>
+    </fieldset>
+</body>
+
+</html>
