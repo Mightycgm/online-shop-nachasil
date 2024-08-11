@@ -5,29 +5,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Main</title>
-    <link rel="stylesheet" href="mainstyle.css">
+    <link rel="stylesheet" href="main_page.css">
     <link href="https://fonts.googleapis.com" rel="preconnect">
     <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" 
     integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" 
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="main_page.js"></script>
 </head>
 
 <body>
-    <div class="navbar">
-        <div class="nav-links">
-            <a class="active" href="home.html"><i class="fa fa-fw fa-home"></i> Home</a>
-            <a href="about.html"><i class="fa-solid fa-address-card"></i> About</a>
-            <a href="services.html"><i class="fa-regular fa-handshake"></i> Services</a>
-            <a href="contact.html"><i class="fa-regular fa-envelope"></i> Contact</a>
-            <a href="main.html" id="active"><i class="fa-solid fa-house-user"></i> Main</a>
-            <a href="login.html" style="float:right"><i class="fa fa-fw fa-user"></i> Login</a>
-        </div>
-    </div>
+    
     <fieldset class="container">
         <legend>ข้อมูลติดต่อ</legend>
-        <form id="form-input" onsubmit="event.preventDefault(); formSubmit();" autocomplete="off" >
+        <form id="form-input" onsubmit="event.preventDefault(); formSubmit(); resetForm()" autocomplete="off" >
             <div>
                 <label>ชื่อ-สกุล : </label>
                 <input type="text" id="txtname" class="input" placeholder="ชื่อ-สกุล" required>
@@ -38,7 +30,7 @@
             </div>
             <div>
                 <label>เบอร์โทร : </label>
-                <input type="text" id="txtphone" class="input" placeholder="เบอร์โทร" required>
+                <input type="number" id="txtphone" class="input" placeholder="เบอร์โทร" required>
             </div>
             <div>
                 <input type="submit" class="btn" id="submit" value="บันทึก">
@@ -61,7 +53,6 @@
                 </table>
             </section>
     </fieldset>
-    <script src="main.js"></script>
 </body>
 
 </html>
