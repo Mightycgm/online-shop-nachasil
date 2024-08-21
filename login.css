@@ -85,6 +85,15 @@ legend {
 .register {
     text-align: center;
 }
+#register {
+    color: white;
+    font-size: 26px;
+    text-decoration: underline #6b0000 5px;
+}
+#register:hover {
+    color: #6b0000;
+    transition: 0.6s;
+}
 
 .icons {
     text-align: center;

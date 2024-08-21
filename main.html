@@ -19,18 +19,25 @@
     
     <fieldset class="container">
         <legend>ข้อมูลติดต่อ</legend>
+        <a href="home.html" class="closebtn">&times;</a>
         <form id="form-input" onsubmit="event.preventDefault(); formSubmit(); resetForm()" autocomplete="off" >
             <div>
-                <label>ชื่อ-สกุล : </label>
-                <input type="text" id="txtname" class="input" placeholder="ชื่อ-สกุล" required>
+                <label>ชื่อ : </label>
+                <input type="text" id="txtname" class="input" placeholder="ชื่อ-สกุลผู้สั่งซื้อสินค้า" required>
             </div>
             <div>
-                <label>ที่อยู่ : </label>
-                <input type="text" id="txtaddress" class="input" placeholder="ที่อยู่" required>
+                <label>เกม : </label>
+                <select type="text" id="txtaddress" class="input" placeholder="ชื่อเกม" required>
+                    <option>Elden Ring</option>
+                    <option selected>Monster Hunter World</option>
+                    <option>Project Zomboid</option>
+                    <option>Broforce</option>
+                    <option>7 Day To Die</option>
+                </select>
             </div>
             <div>
-                <label>เบอร์โทร : </label>
-                <input type="number" id="txtphone" class="input" placeholder="เบอร์โทร" required>
+                <label>วันทีสั่งซื้อ : </label>
+                <input type="date" id="txtphone" class="input" required>
             </div>
             <div>
                 <input type="submit" class="btn" id="submit" value="บันทึก">
@@ -42,8 +49,8 @@
                     <thead>
                         <tr>
                             <th>ชื่อ-สกุล</th>
-                            <th>ที่อยู่</th>
-                            <th>เบอร์โทร</th>
+                            <th>เกม</th>
+                            <th>วันทีสั่งซื้อ</th>
                             <th><i class="fa-regular fa-pen-to-square"></i></th>
                             <th><i class="fa-solid fa-trash"></i></th>
                         </tr>
