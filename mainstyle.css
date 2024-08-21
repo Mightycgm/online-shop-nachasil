@@ -142,6 +142,7 @@ li {
 
 .game label{
   font-size: 20px;
+  margin-left: 20px;
 }
 
 .game h2 {
@@ -149,9 +150,6 @@ li {
   text-decoration: #6b0000 underline;
 }
 
-#eldenring label {
-  padding-left: 20px;
-}
 
 #person {
   border-radius: 5px;
@@ -165,7 +163,6 @@ li {
 
 .left{
   color: white;
-  margin-left: 620px;
 }
 .right{
   color: white;
